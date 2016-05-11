@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.navbar-header>a>img{
+	position: relative;
+	top: -12px;
+	left: 0;
+}
+
+
+
+#so{
+	padding-left: 590px;
+}
+.cont aside{
+	position: absolute;
+	top: 49px;
+	left: 0;
+	display: block;
+	z-index: -99;
+	height: 582px;
+	width: 143px;
+	background: rgb(248,248,248);
+}
+.cont aside nav{
+	border:none;
+}
+
+
+.cont aside ul li{
+	position: relative;
+	top: 20px;
+	left: -15px;
+}
+
+.cont aside nav .collapse ul li a{
+	text-align: left;
+	display: block;
+	width: 143px;
+	padding: 10px 0 10px 10px;
+}
+
+
+.cont aside nav .collapse ul li a:hover{
+	color: white;
+	background: lightgray;
+}
+/*.cont aside nav .collapse ul li*/ i{
+	margin-right: 10px;
+}
+
+.cont .main-cont{
+	position: absolute;
+	top: 52px;
+	left: 143px;
+	width: 1223px;
+	height: 575px;
+}
+.button-group{
+	padding-top: 4px;
+}
+.button-group button{
+	margin-right: 5px;
+}
+.button-group div button{
+	margin-right: 0;
+}
+#table-list tbody tr td:not(:first-child){
+	text-align: center;
+}
+#table-list tbody tr td:first-child{
+	width: 600px;
+}
