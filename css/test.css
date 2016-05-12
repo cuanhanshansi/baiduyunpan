@@ -8,10 +8,36 @@
 	left: 0;
 }
 
+a{
+	color: black;
+}
+nav .wp-list{
+	width: 640px;
+	height: 110px;
+	position: absolute;
+	z-index: 999;
+	top: 50px;
+	left: -60px;
+	box-shadow: -1px 1px 10px rgba(128,128,128,.5),
+				1px 1px 10px rgba(128,128,128,.5);
+	display: none;
+	background: rgb(246,246,249);
+}
+nav .page ul li[class="active"]:hover .wp-list{
+	display: block;
+}
 
-
+nav .page ul li:hover{
+	background: rgb(8,8,8);
+}
+nav .page ul li:hover a{
+	background: red;
+}
+#more{
+	width: 100px;
+}
 #so{
-	padding-left: 590px;
+	padding-left: 550px;
 }
 .cont aside{
 	position: absolute;
@@ -71,4 +97,60 @@
 }
 #table-list tbody tr td:first-child{
 	width: 600px;
+}
+
+#myModal #mb1{
+	height: 450px;
+}
+
+#mb1 button{
+	width: 110px;
+	height: 110px;
+	margin-left: 22px;
+	border:none;
+
+}
+#mb1 .share{
+	width: 560px;
+	height: 150px;
+	background: rgb(255,255,255);
+	border: 1px solid rgba(128,128,128,.1);
+}
+#mb1 .share button{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin-left: 15px;
+	margin-top: 28px;
+
+	border: none;
+}
+#mb1 button i{
+	font-size: 30px;
+	margin: 0 auto;
+}
+#mb1 .share a{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin-left: 15px;
+	margin-top: 28px;
+
+	border: none;
+}
+#mb1 a i{
+	font-size: 30px;
+	margin: 0 auto;
+}
+#mb1 .share a p{
+	font-size: 12px;
+}
+#mb1 .share a i img{
+	display: block;
+	width: 64px;
+	height: 64px;
+	border-radius: 40px;
+}
+#mb1 #neirong p{
+	font-size: 12px;
 }
