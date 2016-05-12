@@ -8,13 +8,6 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/test.css">
   <link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
-  <script type="text/javascript">
-  	$(function(){
-  		$("#mb1 button").click(function(){
-  			$("p").css.style("color","#0000ff");
-  		});
-  	});
-  </script>
 </head>
 <body> 
 	<!-- 导航部分开始！ -->
@@ -31,27 +24,52 @@
 			   <div class="page">
 			      <ul class="nav navbar-nav">
 			         <li><a href="#">主页</a></li>
-			         <!-- <li class="dropdown active">
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			               网盘 
-			               <b class="caret"></b>
-			            </a>
-			            <ul class="dropdown-menu">
-			               <li><a href="#">jmeter</a></li>
-			               <li><a href="#">EJB</a></li>
-			               <li><a href="#">Jasper Report</a></li>
-			               <li class="divider"></li>
-			               <li><a href="#">分离的链接</a></li>
-			               <li class="divider"></li>
-			               <li><a href="#">另一个分离的链接</a></li>
-			            </ul>
-			         </li> -->
-
 			         <li class="active">
 			         	<a href="#">网盘
 			         		<b class="caret"></b>
 			         	</a>
-						<div class="wp-list"></div>
+						<div class="wp-list">
+							
+
+								<a class="btn btn-default" role="button" href="#" style="margin-left: 7px;">
+									<span class="a1"></span>
+									<p>网盘</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a2"></span>
+									<p>通讯录</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a3"></span>
+									<p style="margin-left: -7px;">通讯记录</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a4"></span>
+									<p>短信</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a5"></span>
+									<p>相册</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a6"></span>
+									<p>文章</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a7"></span>
+									<p>记事本</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a8"></span>
+									<p style="margin-left: -7px;">手机找回</p>
+								</a>
+								<a class="btn btn-default" role="button" href="#">
+									<span class="a9"></span>
+									<p>云直播</p>
+								</a>
+
+							
+						</div>
 			         </li>
 			         <li><a href="#">分享</a></li>
 			         <li><a href="#">应用</a></li>
@@ -224,14 +242,17 @@
 								   <div class="button-group" style="float: left;">
 
 								   	   <!-- 分享按钮的模态框开始! -->
-									   <button class="btn btn-default" type="button" data-toggle="modal" data-target="#myModal">
+									   <button class="btn btn-default" type="button" data-toggle="modal" data-target="#myModal-share">
 											<i class="icon-plus"></i>分享
 									   </button>
 
 										<!-- 模态框（Modal） -->
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal fade" id="myModal-share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<!-- 模态框对话框 -->
 										   <div class="modal-dialog">
+										   	  <!-- 模态框正文 -->
 										      <div class="modal-content">
+										      	 <!-- 模态框头部 -->
 										         <div class="modal-header">
 										            <button type="button" class="close" 
 										               data-dismiss="modal" aria-hidden="true">
@@ -241,16 +262,58 @@
 										               分享文件(夹)：照片
 										            </h4>
 										          </div>
-										          <div class="modal-body" id="mb1">
-										            <button class="btn btn-default">
+
+										         <!-- 模态框中间部分开始！ -->
+										         <div class="modal-body" id="mb1">
+
+										         <!-- 模态框中间 上部分开始 -->
+										          <!-- class="nav nav-tabs" -->
+										          <ul id="myTab">
+													   <li>
+													      <a class="btn btn-default" href="#to-link" data-toggle="tab">
+															<i class="glyphicon glyphicon-paperclip" style="color: rgb(163,163,163);"></i>
+										            		<p>链接分享</p>
+										            	  </a>
+													   </li>
+
+													   <li>
+														   <a class="btn btn-default" href="#to-friend" data-toggle="tab">
+										            		<i class="glyphicon glyphicon-user" style="color: orange;"></i>
+										            		<p>发给好友</p>
+										            	   </a>
+													   </li>
+
+													   <li>
+														   <a class="btn btn-default" href="#to-email" data-toggle="tab">
+										            		<i class="glyphicon glyphicon-envelope" style="color: rgb(116,202,253);"></i>
+										            		<p>发到邮箱</p>
+										            	   </a>
+													   </li>
+
+													   <li>
+														   <a class="btn btn-default" href="#to-community" data-toggle="tab">
+										            		<i class="glyphicon glyphicon-share" style="color: rgb(68,200,239);"></i>
+										            		<p>分享到社区</p>
+										            	   </a>
+													   </li>
+													   
+													</ul>
+										            <!-- <a class="btn btn-default">
 														<i class="glyphicon glyphicon-paperclip" style="color: rgb(163,163,163);"></i>
-										            <p>链接分享</p></button>
-										            <button class="btn btn-default">
+										            <p>链接分享</p></a>
+										            <a class="btn btn-default">
 										            <i class="glyphicon glyphicon-user" style="color: orange;"></i>
-										            <p>发给好友</p></button>
-										            <button class="btn btn-default"><i class="icon-envelope-alt" style="color: rgb(116,202,253);"></i><p>发到邮箱</p></button>
-										            <button class="btn btn-default"><i class="icon-pinterest-sign" style="color: rgb(68,200,239);"></i><p>分享到社区</p></button><br /><br />
-										            <div id="neirong">
+										            <p>发给好友</p></a>
+										            <a class="btn btn-default"><i class="glyphicon glyphicon-envelope" style="color: rgb(116,202,253);"></i><p>发到邮箱</p></a>
+										            <a class="btn btn-default"><i class="glyphicon glyphicon-share" style="color: rgb(68,200,239);"></i><p>分享到社区</p></a> -->
+
+										            <!-- 模态框中间 上部分结束 -->
+
+													
+										            <br />
+
+										            <!-- 模态框中间 下部分开始 -->
+										            <!-- <div id="neirong">
 											            <p>将文件的公开下载地址分享到微博、QQ空间等</p>
 
 											            <div class="share">
@@ -264,22 +327,107 @@
 												            <a class="btn btn-default" href="http://widget.renren.com/dialog/share?resourceUrl=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-renren-1-12257-98fde57bb3d39343db0f272b38411f3e&srcUrl=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-renren-1-12257-98fde57bb3d39343db0f272b38411f3e&title=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&description=" target="_blank"><i><img src="images/renren.png"></i><p>人人网</p></a>
 												            <a class="btn btn-default" href="http://www.lofter.com/login?urschecked=true" target="_blank"><i><img src="images/126.png"></i><p>网易微博</p></a>
 											            </div>
-										            </div>
+										            </div> -->
+
+										            <div id="myTabContent" class="tab-content">
+													   <div class="tab-pane fade in active" id="to-link">
+													        <p>生成下载链接，然后复制链接发送到QQ、MSN等好友</p>
+													        <div class="share"></div>
+													   </div>
+													   <div class="tab-pane fade" id="to-friend">
+													        <p>选择好友分享文件，一次最多50人</p>
+													        <div class="share"></div>
+													   </div>
+
+													   <div class="tab-pane fade" id="to-email">
+													        <p>将文件的下载地址发到好友的邮箱，一次最多5人(0)</p>
+													        <div class="share"></div>
+													   </div>
+
+													   <div class="tab-pane fade neirong" id="to-community">
+												            <p>将文件的公开下载地址分享到微博、QQ空间等</p>
+
+												            <div class="share">
+												            	<a class="btn btn-default" role="button" href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-tsina-1-15977-397232819ff9a47a7b7e80a40613cfe1&title=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&appkey=1343713053&searchPic=true#_loginLayer_1463023886762" target="_blank">
+																	<i><img src="images/sina.png"></i>
+													            <p>新浪微博</p></a>
+													            <a class="btn btn-default" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-qzone-1-62083-d020d2d2a4e8d1a374a433f596ad1440&title=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&desc=&summary=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&site=" target="_blank">
+													            <i><img src="images/qq.png"></i>
+													            <p>QQ空间</p></a>
+													            <a class="btn btn-default" href="http://share.v.t.qq.com/index.php?c=share&a=index&url=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-tqq-1-15350-89b7933b38b0586d98eb9d131fa70b46&title=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&appkey=801cf76d3cfc44ada52ec13114e84a96" target="_blank"><i><img src="images/tencent.png"></i><p>腾讯微博</p></a>
+													            <a class="btn btn-default" href="http://widget.renren.com/dialog/share?resourceUrl=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-renren-1-12257-98fde57bb3d39343db0f272b38411f3e&srcUrl=http%3A%2F%2Fpan.baidu.com%2Fs%2F1mixVDrE%230-renren-1-12257-98fde57bb3d39343db0f272b38411f3e&title=Hi%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8%23%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%23%EF%BC%8C%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E2%80%9C%E6%95%99%E7%A8%8B%E2%80%9D%E6%96%87%E4%BB%B6%EF%BC%8C%E5%BF%AB%E6%9D%A5%E7%9C%8B%E7%9C%8B%E5%90%A7%7E&description=" target="_blank"><i><img src="images/renren.png"></i><p>人人网</p></a>
+													            <a class="btn btn-default" href="http://www.lofter.com/login?urschecked=true" target="_blank"><i><img src="images/126.png"></i><p>网易微博</p></a>
+												            </div>
+										               </div>
+
+													</div>
+										            <!-- 模态框中间 下部分结束 -->
 										          </div>
+										          <!-- 模态框中间部分结束！ -->
+
+										          <!-- 模态框底部 -->
 										          <div class="modal-footer" style="border: none;">
 										            <button type="button" class="btn btn-default" 
-										               data-dismiss="modal">关闭
+										               data-dismiss="modal" style="width: 120px;">关闭
 										            </button>
 										          </div>
-										      </div><!-- /.modal-content -->
-										   </div><!-- /.modal -->
+										          <!-- 模态框底部 -->
+
+
+										      </div><!-- 模态框正文 -->
+										   </div><!-- 模态框对话框 -->
 										</div>
-										<!-- 分享按钮的模态框结束! -->
+										<!-- 模态框结束! -->
 
-
-									   <button class="btn btn-default" type="button">
+										<button class="btn btn-default" type="button" data-toggle="modal" data-target="#myModal-down">
 											<i class="icon-download-alt"></i>下载
 									   </button>
+
+									   <div class="modal fade" id="myModal-down" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<!-- 模态框对话框 -->
+										   <div class="modal-dialog">
+										   	  <!-- 模态框正文 -->
+										      <div class="modal-content">
+										      	 <!-- 模态框头部 -->
+										         <div class="modal-header" style="background: url('images/modal-down-bg.png') repeat; height: 38px;">
+										            <button type="button" class="close" 
+										               data-dismiss="modal" aria-hidden="true">
+										                  &times;
+										            </button>
+										            <h4 class="modal-title" id="myModalLabel" style="margin-top: -8px;">
+										               文件下载
+										            </h4>
+										          </div>
+
+										         <!-- 模态框中间部分开始！ -->
+										         <div class="modal-body" id="mb1">
+
+
+												            <div class="share">
+												            	
+												            </div>
+										              
+										            <!-- 模态框中间 下部分结束 -->
+										          </div>
+										          <!-- 模态框中间部分结束！ -->
+
+										          <!-- 模态框底部 -->
+										          <div class="modal-footer" style="border: none;background: rgb(255,253,233);">
+										            <!-- <button type="button" class="btn btn-default" 
+										               >立即提速
+										            </button> -->
+										            <a class="btn btn-default" type="button" href="#">立即提速</a>
+										          </div>
+										          <!-- 模态框底部 -->
+
+
+										      </div><!-- 模态框正文 -->
+										   </div><!-- 模态框对话框 -->
+										</div>
+										<!-- 模态框结束! -->
+
+	
+									   
 									   <button class="btn btn-default" type="button">
 											<i class="icon-trash"></i>删除
 									   </button>
