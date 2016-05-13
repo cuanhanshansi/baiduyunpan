@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+button{
+	outline: none;
+} 
 .navbar-header>a>img{
 	position: relative;
 	top: -12px;
@@ -51,41 +54,49 @@ nav .page .wp-list a p{
 	position: absolute;
 	top: 27px;
 	left: 92px;
+	background-position: -35px 0;
 }
 .wp-list a span.a3{
 	position: absolute;
 	top: 27px;
 	left: 163px;
+	background-position: -350px 0;
 }
 .wp-list a span.a4{
 	position: absolute;
 	top: 27px;
 	left: 233px;
+	background-position: -175px 0;
 }
 .wp-list a span.a5{
 	position: absolute;
 	top: 27px;
 	left: 303px;
+	background-position: -70px 0;
 }
 .wp-list a span.a6{
 	position: absolute;
 	top: 27px;
 	left: 373px;
+	background-position: -315px 0;
 }
 .wp-list a span.a7{
 	position: absolute;
 	top: 27px;
 	left: 443px;
+	background-position: -140px 0;
 }
 .wp-list a span.a8{
 	position: absolute;
 	top: 27px;
 	left: 513px;
+	background-position: -210px 0;
 }
 .wp-list a span.a9{
 	position: absolute;
 	top: 27px;
 	left: 583px;
+	background-position: -245px 0;
 }
 nav .page ul li[class="active"]:hover .wp-list{
 	display: block;
@@ -206,4 +217,27 @@ nav .page ul li:hover{
 #mb1 ul li{
 	list-style: none;
 	display: inline-block;
+}
+
+#mb1 .file-down{
+	height: 200px;
+}
+#mb1 .file-down button{
+	width: 240px;
+	margin-top: 20px;
+	margin-left: 160px;
+}
+#mb1 .file-down #fileName{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#myModal-down{
+	margin-top: 100px;
+}
+#myModal-delete{
+	margin-top: 100px;
+}
+#myModal-delete .file-delete button{
+	width: 125px;
 }
